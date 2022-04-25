@@ -183,7 +183,7 @@ Thanks to the virtual machine, you can create NFTs without needing to understand
 
 Cell is a minimal virtual machine in a smart contract. Instead of deploying a fully hard-coded smart contract onto the blockchain, you deploy a virtual machine which can interpret incoming signed messages (called "offchain token script") and mint them into **onchain tokens**.
 
-Also it implements a universal URI to reference each token, which makes it every token ever printed with Cell universally unique and platform independent.
+Also it implements a universal URI to reference each token, which makes every token ever printed with Cell universally unique and platform independent.
 
 Traditionally, NFTs have been uniquely identified by arbitrarily assigning tokenIds such as 1, 2, 3, etc. This works for one chain but does not scale out side of a single chain because you can have different tokenIds for the same token, depending on the blockchain. 
 
