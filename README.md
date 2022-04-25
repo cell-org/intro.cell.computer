@@ -149,8 +149,6 @@ We can describe the difference as **Fat Contract vs. Lean Contract**:
 
 Traditionally, NFT contracts have been all about **writing as much collection-specific logic into the contract as possible**.
 
-When you deploy a cell contract, you are NOT deploying any logic. Instead you're deploying an interpreter that will interpret all the future instructions to decide whether to mint an onchain token or not.
-
 
 ### Lean contract
 
