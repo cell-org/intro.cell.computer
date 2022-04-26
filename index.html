@@ -39,6 +39,15 @@
           window.scrollTo({top: y});
         }
       }, 1000)
+
+      document.body.addEventListener("click", (e) => {
+        let el = e.target.closest("a")
+        console.log("el", el)
+        if (el || e.target.tagName === "A" || e.target.href.startsWith("#/?id=")) {
+          console.log("yes")
+          location.hash = e.target.href.slice(1)
+        }
+      })
     })
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>

@@ -61,7 +61,7 @@ There do exist several **service providers** that let you mint NFTs through thei
 
 ---
 
-## Platform dependent
+## Platform Dependent
 
 There are many blockchains out there. While it is not difficult to write one contract and deploy to many blockchains since many blockchains share the same codebase (EVM or Bitcoin), it is still near impossible to easily port NFTs from one blockchain to another.
 
@@ -86,7 +86,7 @@ Practically speaking, this is a very real risk factor for anyone thinking about 
 
 ---
 
-## Everything costs money
+## Everything Costs Money
 
 With a typical NFT contract, because all the token related logic is stored inside an NFT smart contract on the blockchain, everything costs money:
 
@@ -106,7 +106,7 @@ The barrier to experimentation is simply too high for NFTs. Even the people who 
 
 ---
 
-## Handcrafted only
+## No Automation
 
 We take for granted that NFTs are something that can only be created manually by human, and cannot be automated..
 
@@ -133,7 +133,7 @@ Instead of building NFT collections that rely on a single blockchain, Cell provi
 
 ---
 
-## Dynamic programmability
+## Dynamic Programmability
 
 Once you deploy a smart contract, you can't change the logic. This is analogous to a calculator being able to do only one thing: calculation.
 
@@ -177,7 +177,7 @@ Thanks to the virtual machine, you can create NFTs without needing to understand
 ---
 
 
-## Platform independent
+## Platform Independent
 
 ![everywhere.png](everywhere.png)
 
@@ -195,7 +195,7 @@ Cell solves this problem with a universally unique tokenId system powered by IPF
 
 ---
 
-## Unlimited tokens at zero cost
+## Unlimited Tokens at Zero Cost
 
 Cell was designed to get rid of all the maintenance costs and minting costs completely.
 
@@ -211,7 +211,7 @@ Cell was designed to get rid of all the maintenance costs and minting costs comp
 
 ---
 
-## Can be automated
+## Can be Automated
 
 Most NFTs until now have been **manually created by humans**. This includes even the "generative art" NFTs, because the actual creation of each token is always triggered by human interactions.
 

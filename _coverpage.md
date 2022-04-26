@@ -1,9 +1,12 @@
-![cellogo.png](cellogo.png)
+<div class='row'>
+  <img src='cellogo.png' class='beat'>
+  <div class='col'>
+    <h1>Cell</h1>
+    <blockquote>NFT Virtual Machine</blockquote>
+    <a class='btn' href="#/?id=introduction">Get started</a>
+  </div>
+</div>
 
-# Cell
 
-> NFT Virtual Machine Protocol
-
-[Get Started](#introduction)
 
 ![color](white)

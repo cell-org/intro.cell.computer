@@ -14,6 +14,7 @@
 body {
   font-family: "Helvetica Neue", helvetica, arial, "sans serif";
 }
+/*
 section.cover .cover-main {
   max-width: 500px;
   text-align: left;
@@ -27,12 +28,34 @@ section.cover .cover-main {
   margin: 0 !important;
 }
 .cover-main blockquote {
+  font-size: 14px;
   margin: 0;
   text-align: left !important;
+  text-transform: uppercase;
+  font-family: Sans-serif !important;
+}
+*/
+.cover-main h1 {
+  text-align: left !important;
+  margin: 0 !important;
+}
+.cover-main blockquote {
+  margin: 0 0 15px;
+  text-transform: uppercase;
+  font-family: Sans-serif !important;
+  text-align: left !important;
+  font-size: 14px !important;
 }
 section.cover p {
-  margin: 0;
+  font-size: 14px;
+  text-align: left;
 }
+/*
+section.cover p {
+  margin: 0;
+  font-size: 14px;
+}
+*/
 section.cover .cover-main>p:last-child a {
   margin: 20px 0 !important;
 }
@@ -60,14 +83,16 @@ section.cover {
 .cover-main h1 {
   font-size: 100px !important;
 }
+/*
 .cover-main blockquote {
   font-family: visitor;
   font-size: 25px !important;
 }
+*/
 .cover-main img {
   width: 100px;
 }
-section.cover .cover-main>p:last-child a {
+section.cover .cover-main>p:last-child a, section.cover .btn {
   padding: 10px;
   font-family: visitor;
   border-radius: 2px;
@@ -75,6 +100,7 @@ section.cover .cover-main>p:last-child a {
   color: white;
   border: none;
   line-height: 5px;
+  display: inline-block;
   font-size: 20px;
 }
 .markdown-section code, .markdown-section pre {
@@ -149,4 +175,54 @@ a.btn {
   border-radius: 2px;
   color: white;
   text-decoration: none;
+}
+.rotate {
+  animation: rotation 10s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.beat {
+  animation: 6s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+  0% {
+    transform: rotate(0deg) scale(1);
+    /*
+    transform: scale(1);
+    */
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.2) rotate(359deg);
+  }
+  100% {
+    transform: scale(1);
+    /*
+    transform: rotate(359deg) scale(1);
+    */
+  }
+}
+.row {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.col {
+  margin-left: 20px;
+  text-align: left;
+  color: rgba(0,0,0,0.9);
 }
