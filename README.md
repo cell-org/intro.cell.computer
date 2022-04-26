@@ -2,13 +2,17 @@
 
 ## Introduction
 
-Cell is an NFT virtual machine protocol.
+Cell is a new NFT protocol that lets you build NFT collections with an extreme level of flexibility, simplicity, efficiency, reusability, scalability, and cross-platform portability you have never seen before.
 
-Instead of deploying a fixed smart contract logic onto the blockchain, you deploy a Cell virtual machine, and do all the programming logic OUTSIDE the blockchain.
+**It achieves this by adopting a new paradigm:**
+
+> Virtual Machine as a Smart Contract
+
+Instead of deploying a predetermined smart contract logic onto the blockchain, you deploy a Cell virtual machine, and do all the programming logic OUTSIDE the blockchain.
 
 ![vm.png](vm.png)
 
-While a traditional NFT contract requires you to program **hardcoded logic** BEFORE deployment, the Cell virtual machine smart contract lets you program all the token minting logic AFTER deployment.
+While a traditional NFT contract requires you to **program hardcoded logic BEFORE deployment**, the Cell virtual machine smart contract lets you **program all the token minting logic AFTER deployment.**
 
 This has the exact same benefits of the traditional NFTs but with much more flexibility, extreme efficiency, and ultimate portability.
 
@@ -45,11 +49,9 @@ NFT Smart contracts are like hardware. Once you ship them, the logic is fixed, y
 
 ![hardware.png](hardware.png)
 
-Just like how a refrigerator company cannot sell a refrigerator and then somehow remotely morph it to an oven AFTER it's been sold, the behavior of smart contracts are decided BEFORE they are deployed, and it is difficult to try out different ways tokens can be minted once a contract has been deployed.
+Just like how a **refrigerator company cannot sell a refrigerator and then somehow remotely morph it to an oven AFTER it's been sold,** the behavior of smart contracts are decided BEFORE they are deployed, and it is difficult to try out different ways tokens can be minted once a contract has been deployed.
 
-- You cannot add more logic once deployed.
-- You cannot change logic once deployed.
-- You can only program the global logic of the contract. You cannot program each token's logic individually.
+Also, the traditional smart contract approach is equivalent to buying a hypothetical refrigerator that ONLY lets you store pre-determined products, like eggs, milk, butter, and so on, but **does NOT allow you to store unexpected items like leftover pizza, flour dough, energy drinks, or cold brew coffee,** because the allowed items are hardcoded into the refrigerator.
 
 Imagine you wanted to run a business with NFT, where you sell NFTs as access tokens to your business.
 
@@ -59,7 +61,7 @@ Imagine you wanted to run a business with NFT, where you sell NFTs as access tok
 4. Sometimes you may want to do a flash sale, but only for a limited time only
 5. Sometimes you may want to let people claim tokens only if they fit certain conditions
 
-Trying to hard-code all of this into a contract is inefficient and not feasible.
+Trying to hard-code all of this into a contract is not only **inefficient**, but also **infeasible** because **you cannot predict every way you will want to distribute each of your tokens.**
 
 ---
 
