@@ -78,7 +78,7 @@ section.cover .cover-main>p:last-child a {
   margin: 20px;
 }
 .markdown-section blockquote {
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 section.cover.has-mask .mask {
   background: none !important;
