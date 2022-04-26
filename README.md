@@ -1,4 +1,6 @@
-# Introduction
+# Cell
+
+## Introduction
 
 Cell is an NFT virtual machine protocol.
 
@@ -9,6 +11,26 @@ Instead of deploying a fixed smart contract logic onto the blockchain, you deplo
 While a traditional NFT contract requires you to program **hardcoded logic** BEFORE deployment, the Cell virtual machine smart contract lets you program all the token minting logic AFTER deployment.
 
 This has the exact same benefits of the traditional NFTs but with much more flexibility, extreme efficiency, and ultimate portability.
+
+---
+
+## News & Community
+
+> - **Twitter:** https://twitter.com/skogard
+> - **Discord:** https://discord.gg/BZtp5F6QQM
+> - **Medium:** https://medium.com/@skogard
+
+---
+
+## Quickstart
+
+You can build your own NFT collection in minutes by following the tutorial:
+
+<blockquote><a class='btn' href="https://tutorial.cell.computer">Visit Tutorial</a></blockquote>
+
+<br>
+
+![nuronpreview.gif](nuronpreview.gif)
 
 
 ---
