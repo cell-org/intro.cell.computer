@@ -42,9 +42,9 @@
 
       document.body.addEventListener("click", (e) => {
         let el = e.target.closest("a")
-        console.log("el", el)
-        if (el || e.target.tagName === "A" || e.target.href.startsWith("#/?id=")) {
-          console.log("yes")
+        if (el && el.href.startsWith("#/?id=")) {
+          location.hash = el.href.slice(1)
+        } else if (e.target.tagName === "A" && e.target.href.startsWith("#/?id=")) {
           location.hash = e.target.href.slice(1)
         }
       })
