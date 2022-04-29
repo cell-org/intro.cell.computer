@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Cell is a new NFT protocol that lets you build NFT collections with an extreme level of flexibility, simplicity, efficiency, reusability, scalability, and cross-platform portability you have never seen before.
+Cell is a new NFT protocol that lets you build NFT collections with an extreme level of flexibility, simplicity, efficiency, reusability, scalability, and cross-platform portability.
 
 **It achieves this by adopting a new paradigm:**
 
@@ -101,7 +101,7 @@ When we talk about NFTs, we identify them by asking the following questions:
 
 You may have a single image you want to turn into NFT. The `tokenId` for the image will be different depending on where you host the NFT.
 
-Because the **tokenIds are blokchain dependent**, the NFTs using this scheme are naturally blockchain dependent and not easily portable. It is not easy for NFTs to cross over from one blockchain to another.
+Because the **tokenIds are blockchain dependent**, the NFTs using this scheme are naturally blockchain dependent and not easily portable. It is not easy for NFTs to cross over from one blockchain to another.
 
 Practically speaking, this is a very real risk factor for anyone thinking about issuing some valuable asset as an NFT.
 
@@ -132,7 +132,7 @@ The barrier to experimentation is simply too high for NFTs. Even the people who 
 
 ## No Automation
 
-We take for granted that NFTs are something that can only be created manually by human, and cannot be automated..
+We take for granted that NFTs are something that can only be created manually by humans, and cannot be automated..
 
 All existing NFT frameworks are focused on creating static NFT collections where humans always need to be involved from the beginning till the end. Even the so-called "generative art" NFT projects require a human being to run a generative art program first, and manually publish the result afterwards.
 
@@ -190,7 +190,7 @@ The Cell virtual machine abstracts out all the messy and complicated details you
 
 How simple?
 
-**Creating tokens DO NOT even involve connecting to the blockchain network.** You can create tokens completely offline even without an Internet connection.
+For starters, **creating tokens DOES NOT even involve connecting to the blockchain network.** You can create tokens completely offline even without an Internet connection.
 
 This means **You do not even need to deal with the blockchain at all!** 
 
@@ -209,7 +209,7 @@ Cell is a minimal virtual machine in a smart contract. Instead of deploying a fu
 
 Also it implements a universal URI to reference each token, which makes every token ever printed with Cell universally unique and platform independent.
 
-Traditionally, NFTs have been uniquely identified by arbitrarily assigning tokenIds such as 1, 2, 3, etc. This works for one chain but does not scale out side of a single chain because you can have different tokenIds for the same token, depending on the blockchain. 
+Traditionally, NFTs have been uniquely identified by arbitrarily assigning tokenIds such as 1, 2, 3, etc. This works for one chain but does not scale outside of a single chain because you can have different tokenIds for the same token, depending on the blockchain. 
 
 Cell solves this problem with a universally unique tokenId system powered by IPFS (More on this in the "universal token ID" section)
 
@@ -221,7 +221,7 @@ Cell solves this problem with a universally unique tokenId system powered by IPF
 
 ## Unlimited Tokens at Zero Cost
 
-Cell was designed to get rid of all the maintenance costs and minting costs completely.
+Cell was designed to completely get rid of all maintenance costs and minting costs.
 
 - **BEFORE:** With the traditional NFT architecture, everything costs money and you can't easily experiment with different ideas.
 - **AFTER:** With Cell, EVERYTHING is free (except for a one time gas fee for when you deploy the contract at the beginning).
@@ -247,7 +247,7 @@ These tokens then can be minted onto the blockchain.
 
 ![automation.png](automation.png)
 
-1. **Automatic tokenization:** Because you do not have to manually approve signature every time you need to create a token, this can be used to seamlessly tokenize anything on your computer without your intervention.
+1. **Automatic tokenization:** Because you do not have to manually approve a signature every time you need to create a token, this can be used to seamlessly tokenize anything on your computer without your intervention.
 2. **Embeddable token printer:** Through its abstraction, you can create NFTs without ever directly touching all the complicated technologies like solidity, IPFS, and wallets. This also means it's effortless to embed Cell into ANY program to automatically tokenize anything that happens inside those apps.
 3. **Natural resources in a virtual world:** imagine you want to create a virtual world made up of NFTs as natural resources. You can't just create a single "10K item drop" and call it a day. You want the items to constantly be created or morphed, and the minting difficulty increase or decrease based on market conditions. This is only possible when you can automatically tokenize things.
 
