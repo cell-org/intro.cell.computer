@@ -66,6 +66,9 @@ section.cover .cover-main>p:last-child a {
 .sidebar {
   color: rgba(0,0,0,0.8);
 }
+.sidebar li {
+  margin: 0;
+}
 .sidebar ul li a {
   color: rgba(0,0,0,0.8);
 }
@@ -105,7 +108,9 @@ section.cover {
   width: 80px;
 }
 section.cover .cover-main>p:last-child a, section.cover .btn {
+  display: block !important;
   padding: 10px 15px;
+  margin: 5px 0;
   font-family: visitor;
   border-radius: 2px;
   /*

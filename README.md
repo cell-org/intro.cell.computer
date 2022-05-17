@@ -18,6 +18,7 @@ This has the exact same benefits of the traditional NFTs but with much more flex
 
 ---
 
+
 ## News & Community
 
 > - **Twitter:** https://twitter.com/skogard
@@ -130,6 +131,14 @@ The barrier to experimentation is simply too high for NFTs. Even the people who 
 
 ---
 
+## Protocol Tax
+
+Most blockchain protocols try to capture value on the protocol level by taking a cut for each usage. Even if they do not do it today, that's often the future goal, which may they implement through a governance vote.
+
+While this makes sense for various protocol types (such as marketplace protocols) and there's nothing wrong with this kind of **"protocol fee tax"**, this does add a layer of psychological barrier and uncertainty if you're thinking about building out your whole universe powered by NFTs, made up of millions and billions of tokens.
+
+---
+
 ## No Automation
 
 We take for granted that NFTs are something that can only be created manually by humans, and cannot be automated..
@@ -190,13 +199,27 @@ The Cell virtual machine abstracts out all the messy and complicated details you
 
 How simple?
 
+### 1. No blockchain connection needed
+
 For starters, **creating tokens DOES NOT even involve connecting to the blockchain network.** You can create tokens completely offline even without an Internet connection.
 
-This means **You do not even need to deal with the blockchain at all!** 
+This means **You do not even need to deal with the blockchain at all!**
 
+This removes all the friction (**learning curve, maintenance, cost, 3rd party dependency etc.**) from the picture, letting you fully control experience around your NFTs, not to mention you can **get started instantly without having to set up some blockchain development environment.**
 
+> **How does this work?**
+> 
+> Cell unbundles the minting process into two separate steps:
+>
+> 1. Print tokens
+> 2. Mint tokens
+>
+> The NFT creator just needs to "print" tokens by signing them with keys, and then publish them to the web. It is the "minters" who then mint the printed tokens later, through their browser wallet. Therefore the NFT creator does not need to be connected to the blockchain at all.
+
+### 2. Easy cross platform API
 
 Thanks to the virtual machine, you can create NFTs without needing to understand all the blockchain stuff or other decentralized tech stuff like IPFS. All you need to know is JavaScript. Or you can also use your favorite language to create tokens over simple RPC calls to the virtual machine.
+
 
 ---
 
@@ -219,7 +242,7 @@ Cell solves this problem with a universally unique tokenId system powered by IPF
 
 ---
 
-## Unlimited Tokens at Zero Cost
+## Unlimited Tokens for Free
 
 Cell was designed to completely get rid of all maintenance costs and minting costs.
 
@@ -235,7 +258,19 @@ Cell was designed to completely get rid of all maintenance costs and minting cos
 
 ---
 
-## Can be Automated
+## Ownerless Public Utility
+
+**With Cell, there is no organization that "owns" and directly makes money from the protocol.**
+
+Cell is a public utility protocol, just like the Internet. No owner, and anyone can innovate on it, and anyone can permissionlessly build on top of Cell to build their own overlay protocols WITHOUT paying some protocol tax to the original inventor.
+
+The mental model here is to build a completely open and fair protocol that everyone can build on top of together collaboratively.
+
+> See the [License & Philosophy](#license-amp-philosophy) section to learn more.
+
+---
+
+## Automation
 
 Most NFTs until now have been **manually created by humans**. This includes even the "generative art" NFTs, because the actual creation of each token is always triggered by human interactions.
 
@@ -250,6 +285,7 @@ These tokens then can be minted onto the blockchain.
 1. **Automatic tokenization:** Because you do not have to manually approve a signature every time you need to create a token, this can be used to seamlessly tokenize anything on your computer without your intervention.
 2. **Embeddable token printer:** Through its abstraction, you can create NFTs without ever directly touching all the complicated technologies like solidity, IPFS, and wallets. This also means it's effortless to embed Cell into ANY program to automatically tokenize anything that happens inside those apps.
 3. **Natural resources in a virtual world:** imagine you want to create a virtual world made up of NFTs as natural resources. You can't just create a single "10K item drop" and call it a day. You want the items to constantly be created or morphed, and the minting difficulty increase or decrease based on market conditions. This is only possible when you can automatically tokenize things.
+
 
 ---
 
@@ -465,7 +501,85 @@ Each workspace is 100% **self contained and portable**, and has everything you n
 ![mferbase.png](mferbase.png)
 
 
+---
 
+# License & Philosophy
+
+When it comes to protocols, **"HOW"** you can use them is as important as **"WHAT"** you can use them for.
+
+**Cell is completely open, free, and has no owner, just like the Internet.**
+
+"No owner" also means EVERYONE is an owner.
+
+## 100% Open
+
+Everything that powers Cell is completely open source with a **completely open license (MIT License)**.
+
+1. **Smart Contract (Backend):** The "backend" is fully open sourced with an MIT license.
+2. **Toolchain (Frontend):** Libraries, apps, tools, and everything that powers and integrates with Cell is MIT licensed as well.
+
+Many projects and companies in the blockchain space try to monetize their protocols by open sourcing the protocols but keeping the actual UX closed sourced or not easily accessible (through obfuscation or adding complexity). These are not really "open" because while technically the contract is open source, you still have to rely on the core developer for interacting with the contract.
+
+That's not what Cell is about. Everything around Cell is completely and transparently open sourced so **anyone who adopts the Cell protocol has total control over how they interact with the contract.**
+
+
+
+## 100% Free
+
+Most NFT protocol developers charge their users some fee one way or another. 
+
+1. **Tax:** Pay X% of the sales
+2. **Pay for usage:** Pay fixed amount for usage
+2. **Freemium:** "It's free for now, but eventually we will charge you".
+
+**Cell protocol has NO fee whatsoever.**
+
+We DO encourage everyone to build services, products, or platforms on top of Cell protocol and make money in all kinds of ways including the above.
+
+However it is crucial that **the base layer Cell protocol itself has no fee,** because that's what it was built for.
+
+Cell is effectively a public utility protocol with no strings attached.
+
+> **NOTE**
+>
+> It's important to note that one of the main reasons why Cell protocol takes NO cut for usage is because we want YOU to make money on top of Cell. Any money you make from using Cell is 100% yours.
+
+
+## 100% Ownerless
+
+One of the main design goals of Cell is **permissionless innovation.**
+
+To achieve this, the protocol needs to completely get rid of any potential bureaucracy or centralizing factor that may slow down decision making or add psychological barrier when adopting or experimenting with/around the protocol ("am I allowed to do this?", "do I need to join some community or central organization?", etc.).
+
+Cell is a protocol with no owner, and just like how nobody could stop you from publishing a website on the Interent, there's no one who can stop you from doing whatever you want with the protocol based on some "governance".
+
+1. **No 3rd party dependency:** Cell protocol doesn't require a frontend, and does not require a 3rd party API provider. It does not even require connecting to the blockchain to create tokens (including JSON-RPC providers like Alchemy). You can create tokens all offchain (The minters will mint them through their browser connection to the blockchain later, but the NFT creator does NOT need to be connected to the blockchain at every step along the way).
+2. **No proprietary UI:** Cell deliberately has no UI that it ships with by default. This is because Cell is too flexible and there can be various ways to create tokens (not just user facing interface, but for example you can build a bot that prints tokens autonomously). This also means there exists no "service provider" that you will have to rely on to build your NFTs. When you build NFTs using Cell protocol, you own the entire workflow from the start to the end. This is important for enterprise use cases since businesses who want to use NFTs for their business may feel uncomfortable relying on some 3rd party API provider, and would like to interface directly with the blockchain at all times.
+3. **All will be open sourced:** Even though there is no "official UI" to interact with the Cell protocol, there will be many different ways, and a lot of the standard use cases will be built and open sourced, so people can easily use them.
+4. **No governance:** There is no "protocol governers". **Think of Cell as just a tool (like Ruby on Rails, or JavaScript),** instead of some magical protocol community you have to belong to and participate in voting and stuff, just to build some NFTs. No politics, no worries about coin price (there is no coin). Just utility.
+
+## What's the catch?
+
+The immediate question you may ask is: **What's the catch? Why is this so open? Why are you doing this?**
+
+The answer is: **"There is no catch".** Here's the rationale:
+
+1. **Network effect:** Cell is a protocol without scaling limits because of its offchain-first paradigm. Unbounded scalability means there will be plenty of exponential opportunities for everyone IF and WHEN the protocol takes off, just like the early Internet.
+2. **Grow the pie:** We want to get there as soon as possible so we can all build extremely powerful things and make a dent in the world, instead of being satisfied with slow innovation and keep doing the same old thing over and over that only serves a small group of people.
+3. **Build together:** To achieve this, it is game theoretically more beneficial to eradicate all friction for the very entrepreneurs, artists, developers, creators, and hobbyists who can all build this future together and grow the pie exponentially, instead of trying to capture whatever is extractable from the small pie.
+
+
+## How to Contribute
+
+Agree with the philosophy and would like to help?
+
+The best thing you can do to help the community is:
+
+1. **Share Cell with others:** Share Cell with as many people as possible so we can grow the community as quickly as possible.
+2. **Build on top:** Build NFT collections, frameworks, tools, or whatever.
+3. **Share your work:** Open source libraries, frontends, engines, or anything that could help everyone else in the community.
+4. **Share feedback:** Share ideas and feedback with the core dev and the community, so we can improve or come up with solutions to problems together.
+5. **Network with other NFT creators using Cell protocol:** Cell protocol is extremely interoperable (thanks to the universal cross platform architecture). Let's find ways to collaborate and create synergy together. Join the Discord channel and help each other: https://discord.gg/BZtp5F6QQM
 
 
 ---
