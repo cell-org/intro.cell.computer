@@ -626,3 +626,54 @@ You can even create NFTs whose contents are private, while making use of the tra
 Because the workspace creates a local file system for all the files WITHOUT needing to publish to the IPFS network, you can easily tokenize private files, which then can be shared among a private group (or a public group of authorized users).
 
 ---
+
+# FAQ
+
+## 1. How's it different from lazy minting?
+
+Both lazy minting and Cell use [EIP-712 typed data signature scheme](https://eips.ethereum.org/EIPS/eip-712) to authenticate data offchain.
+
+But they are designed with a completely different philosophy and design goals, therefore result in a completely different architecture from each other.
+
+### a. protocol unbundling
+
+First, most of the popular "lazy minting" contracts (those implemented by NFT marketplaces) are implemented with a method called `mintAndTransfer()`, basically bundling the action of "minting" and "transferring" (via marketplace) in one transaction. 
+
+There are many drawbacks to this approach (such as waste of gas), but ultimately the biggest problem is that the NFT contract is written from a service provider's point of view instead of from an NFT creator's point of view, which results in all kinds of conflict of interest and has various hidden externalities that do not benefit the creators at all.
+
+
+Cell is a contract of the creators, by the creators, for the creators.
+
+By being laser focused on achieving this goal, Cell can be as simple and efficient as possible. With Cell, it's just `mint`. No funny business, and every feature built into the Cell script exists solely for the creators. It's a minimal independent NFT contract that has ZERO ties to a 3rd party contract like marketplace contracts.
+
+### b. portable
+
+The hard part of building an offchain NFT engine that is absolutely decentralized is NOT the smart contract part. That's the easiest part. The hard part exists offchain, such as dealing with IPFS files, managing offchain tokens, etc.
+
+Cell is not just an onchain smart contract. It's a multi-disciplinary framework that lets you achieve a specific goal: truly own and control your own NFT collection without relying on any 3rd party. In fact, the smart contract code is less than 1% of the entire Cell framework code base. Here are some of the important pieces of the puzzle that make Cell truly portable and decentralizable:
+
+- [Mixtape](https://mixtape.cell.computer/#/): Ultraportable NFT database
+- [Nuron](https://nuron.cell.computer/#/): Self-contained NFT file system + wallet RPC engine
+
+These systems collectively provide a containerized NFT repository that can be shared and published easiliy just like sharing a git repository.
+
+This means:
+
+1. You don't have to store your NFT files on someone else's server (and later ask for their permission to retrieve your OWN files through their proprietary APIs)
+2. You can publish your entire NFT collection archive so your NFT community can use it or fork it (for building derivative NFTs or building apps around the collection)
+3. You don't have to worry about your own app performance being affected by someone else's infrastructure
+
+
+### c. offchain as the univeresal storage
+
+Lazy minted NFTs are stored on someone else's server. Cell NFTs are stored universally. They are both "offchain", but it's a huge difference because the purpose as well as the outcome are completely different.
+
+With lazy minted NFTs, the "offchain NFTs" are 2nd class citizens. The NFTs technically don't exist until they get minted on the blockchain, and nobody treats the offchain NFTs seriously (Why would they? Until they are settled onchain, they are nothing more than some files stored on a private and centralized NFT marketplace server).
+
+With Cell, the offchain NFTs are the first class citizens. Instead of thinking "we store NFTs on a blockchain", Cell's viewpoint is that it stores NFTs in a universal storage (IPFS-powered) and uses blockchains just to timestamp and trace the flow of the tokens. This is possible because Cell natively implements an onchain IPFS engine as well as offchain tools and libraries that collectively enable a seamless multi-disciplinary IPFS system that spans both onchain and offchain, which is the key to building NFTs that transcend blockchains.
+
+> With Cell, you can store EVERYTHING on IPFS: NFT asset files, metadata files, and even the Cell script itself (since it's just a signed JSON object)
+
+By adopting this opposite mindset ("NFTs are stored universally and blockchains are just used for tracing" vs. "NFTs are stored on the blockchain"), we can expand our imagination to build all kinds of cool open systems around NFTs, such as NFTs that simultaneously reside on multiple blockchains, cross-chain NFT swaps, and more.
+
+---
