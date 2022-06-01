@@ -39,7 +39,7 @@ With Cell, all you need to know is JavaScript. With just a couple of lines of Ja
 
 Let's try a simple demo. The following web app lets you mint any image on your machine as NFTs, with **just 48 lines of code**:
 
-<iframe width="100%" height="1000" src="//jsfiddle.net/skogard/qf7rvc8L/14/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="100%" height="1000" src="//jsfiddle.net/skogard/qf7rvc8L/18/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 Here's what it looks like:
 
