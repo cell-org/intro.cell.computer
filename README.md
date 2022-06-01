@@ -27,6 +27,26 @@ This has the exact same benefits of the traditional NFTs but with much more flex
 
 ---
 
+## Demo
+
+With Cell, all you need to know is JavaScript. With just a couple of lines of JavaScript you can:
+
+1. Programmatically print your own NFT collection
+2. Build web apps that let others print NFTs
+3. Build agents that print NFTs automatically
+4. Build your own NFT platform
+5. And many more
+
+Let's try a simple demo. The following web app lets you mint any image on your machine as NFTs, with **just 48 lines of code**:
+
+<iframe width="100%" height="1000" src="//jsfiddle.net/skogard/qf7rvc8L/14/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+Here's what it looks like:
+
+![nurondemo.gif](nurondemo.gif)
+
+---
+
 ## Quickstart
 
 You can build your own NFT collection in minutes by following the tutorial:
