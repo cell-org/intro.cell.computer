@@ -18,6 +18,23 @@ This has the exact same benefits of the traditional NFTs but with much more flex
 
 ---
 
+## What can you build?
+
+![1.gif](1.gif)
+
+Anythiing!
+
+The beauty of Cell is that **all the logic is OFFCHAIN until minted**. This means the protocol is unopinionated, which makes it extremely flexible, efficient, and versatile, letting you build all kinds of NFT systems including:
+
+1. **Enterprise NFTs:** supply chain management, inventory management, etc.
+2. **NFT storefronts:** instantly build a storefront for NFTs with super flexible minting conditions for each token
+3. **Dynamic ondemand NFTs:** print NFTs programmatically based on user requests
+4. **Autonomous NFT printing bots:** Automatically print NFTs based on some event, programmatically.
+5. **Plug into existing apps to tokenize everything:** Cell can directly interact with any of your existing apps through simple RPC calls (which is even more simplified by using a Javascript wrapper)
+6. **Build your own NFT platform:** You can build your own NFT minting platform using Cell, since it's completely open source and was designed exactly for this kind of use case.
+
+
+---
 
 ## News & Community
 
