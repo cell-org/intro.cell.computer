@@ -236,10 +236,19 @@ This removes all the friction (**learning curve, maintenance, cost, 3rd party de
 >
 > The NFT creator just needs to "print" tokens by signing them with keys, and then publish them to the web. It is the "minters" who then mint the printed tokens later, through their browser wallet. Therefore the NFT creator does not need to be connected to the blockchain at all.
 
-### 2. Easy cross platform API
+### 2. Simple cross platform API
 
-Thanks to the virtual machine, you can create NFTs without needing to understand all the blockchain stuff or other decentralized tech stuff like IPFS. All you need to know is JavaScript. Or you can also use your favorite language to create tokens over simple RPC calls to the virtual machine.
+Thanks to the virtual machine, you can create NFTs without needing to understand all the blockchain stuff or other decentralized tech stuff like IPFS.
 
+**All you need to know is JavaScript.**
+
+![code.png](code.png)
+
+### 3. Simple cross language RPC
+
+Or, if you prefer to use any other programming language, you can use your favorite language to make HTTP RPC requests to create tokens locally.
+
+> RPC Specification: https://nuron.cell.computer/#/
 
 ---
 
