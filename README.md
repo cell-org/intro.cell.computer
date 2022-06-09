@@ -253,15 +253,23 @@ This removes all the friction (**learning curve, maintenance, cost, 3rd party de
 >
 > The NFT creator just needs to "print" tokens by signing them with keys, and then publish them to the web. It is the "minters" who then mint the printed tokens later, through their browser wallet. Therefore the NFT creator does not need to be connected to the blockchain at all.
 
-### 2. Simple cross platform API
+### 2. Simple one-click deployment
 
-Thanks to the virtual machine, you can create NFTs without needing to understand all the blockchain stuff or other decentralized tech stuff like IPFS.
+Cell takes care of EVERYTHING, including all the IPFS files management and contract deployments.
 
-**All you need to know is JavaScript.**
+Here's how easy it is to deploy a contract. Literally one click!
+
+![deploy.gif](deploy.gif)
+
+### 3. Simple cross platform API
+
+With Cell framework, you can create NFTs without needing to understand all the **blockchain** stuff, **wallet key management**, or other decentralized tech stuff like **IPFS**.
+
+All of these things are internally taken care of by the framework, and **all you need to know is JavaScript.**
 
 ![code.png](code.png)
 
-### 3. Simple cross language RPC
+### 4. Simple cross language RPC
 
 Or, if you prefer to use any other programming language, you can use your favorite language to make HTTP RPC requests to create tokens locally.
 
